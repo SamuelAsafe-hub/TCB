@@ -1,7 +1,10 @@
-package br.edu.ifpr.modelo;
+package br.edu.ifpr.modelo.gest_Transacao;
 
 import java.math.BigDecimal;
 import java.sql.Date;
+
+import br.edu.ifpr.modelo.gest_TabelaFinanca.Tabela_Financa;
+import br.edu.ifpr.modelo.gest_Usuario.Usuario;
 
 public class Transacao {
     

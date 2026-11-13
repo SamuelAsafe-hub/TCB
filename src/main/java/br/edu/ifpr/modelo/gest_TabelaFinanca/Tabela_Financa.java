@@ -1,6 +1,9 @@
-package br.edu.ifpr.modelo;
+package br.edu.ifpr.modelo.gest_TabelaFinanca;
 
 import java.math.BigDecimal;
+
+import br.edu.ifpr.modelo.gest_Transacao.Transacao;
+import br.edu.ifpr.modelo.gest_Usuario.Usuario;
 
 public class Tabela_Financa {
  

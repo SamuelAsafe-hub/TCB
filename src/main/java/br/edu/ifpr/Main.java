@@ -2,8 +2,8 @@ package br.edu.ifpr;
 import java.math.BigDecimal;
 import java.sql.SQLException;
 
-import br.edu.ifpr.jdbc.UsuarioDAO;
-import br.edu.ifpr.modelo.Usuario;
+import br.edu.ifpr.dao.UsuarioDAO;
+import br.edu.ifpr.modelo.gest_Usuario.Usuario;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -19,4 +19,6 @@ public class Main {
 
 
     }
+
+
 }

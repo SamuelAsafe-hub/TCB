@@ -1,8 +1,12 @@
-package br.edu.ifpr.modelo;
+package br.edu.ifpr.modelo.gest_Usuario;
 
 import java.math.BigDecimal;
 
-public class Usuario {
+import br.edu.ifpr.modelo.gest_Atividade.Atividade;
+import br.edu.ifpr.modelo.gest_TabelaFinanca.Tabela_Financa;
+
+
+public class Usuario{
    
     private Integer idUsuario;
     private String Nickname;

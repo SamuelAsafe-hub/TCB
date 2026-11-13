@@ -1,9 +1,11 @@
-package br.edu.ifpr.modelo;
+package br.edu.ifpr.modelo.gest_Atividade;
 
 import java.sql.Date;
 import java.sql.Time;
 
 import javax.print.DocFlavor.STRING;
+
+import br.edu.ifpr.modelo.gest_Usuario.Usuario;
 
 public class Atividade {
     

@@ -1,4 +1,4 @@
-package br.edu.ifpr.jdbc;
+package br.edu.ifpr.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,9 +10,6 @@ public class Conexao {
     private static final String USUARIO ="aluno";
     private static final String PASSWORD = "aluno";
     
-    public Conexao() {
-
-    }
 
     public static Conexao getInstancia(){
 
@@ -22,8 +19,8 @@ public class Conexao {
 
     public Connection conectar () throws SQLException {
 
-        return DriverManager.getConnection(URL, USUARIO, PASSWORD);
-
+        Connection conexao = DriverManager.getConnection(URL, USUARIO, PASSWORD);
+        return conexao;
     }
 
 

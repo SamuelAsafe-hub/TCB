@@ -1,10 +1,10 @@
-package br.edu.ifpr.jdbc;
+package br.edu.ifpr.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import br.edu.ifpr.modelo.Usuario;
+import br.edu.ifpr.modelo.gest_Usuario.*;
 
 public class UsuarioDAO {
 
