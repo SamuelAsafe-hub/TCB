@@ -10,60 +10,45 @@ import br.edu.ifpr.modelo.gest_Usuario.Usuario;
 public class Atividade {
     
     private Integer idAtividade;
-    private Usuario id_usuario; 
-    private String tipoAtividade;
+    private Usuario usuario; 
+    private String nomeAtividade;
     private Date dataAtividade;
-    private Time horario;
-    private Time duracao;
+    private Time horarioAtividade;
    
     public Integer getIdAtividade() {
         return idAtividade;
     }
-  
     public void setIdAtividade(Integer idAtividade) {
         this.idAtividade = idAtividade;
     }
-    
-    public Usuario getId_usuario() {
-        return id_usuario;
+    public Usuario getUsuario() {
+        return usuario;
     }
-   
-    public void setId_usuario(Usuario id_usuario) {
-        this.id_usuario = id_usuario;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
-  
-    public String getTipoAtividade() {
-        return tipoAtividade;
+    public String getNomeAtividade() {
+        return nomeAtividade;
     }
-   
-    public void setTipoAtividade(String tipoAtividade) {
-        this.tipoAtividade = tipoAtividade;
+    public void setNomeAtividade(String nomeAtividade) {
+        this.nomeAtividade = nomeAtividade;
     }
-   
     public Date getDataAtividade() {
         return dataAtividade;
     }
-   
     public void setDataAtividade(Date dataAtividade) {
         this.dataAtividade = dataAtividade;
     }
-   
-    public Time getHorario() {
-        return horario;
+    public Time getHorarioAtividade() {
+        return horarioAtividade;
     }
-   
-    public void setHorario(Time horario) {
-        this.horario = horario;
+    public void setHorarioAtividade(Time horarioAtividade) {
+        this.horarioAtividade = horarioAtividade;
     }
   
-    public Time getDuracao() {
-        return duracao;
-    }
    
-    public void setDuracao(Time duracao) {
-        this.duracao = duracao;
-    }
-
+   
+   
 
 
 }

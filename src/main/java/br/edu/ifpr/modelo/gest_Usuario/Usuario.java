@@ -11,7 +11,7 @@ public class Usuario{
     private Integer idUsuario;
     private String Nickname;
     private String Senha;
-    private BigDecimal saldo;
+    private BigDecimal saldo = BigDecimal.ZERO;
     private Tabela_Financa tabela_Financa;
     private Atividade atividade;
    
