@@ -5,13 +5,12 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import br.edu.ifpr.modelo.gest_TabelaFinanca.Tabela_Financa;
-import br.edu.ifpr.modelo.gest_Usuario.Usuario;
 
 public class Tabela_FinancaDAO {
 
      public void inserirTabelaFinanca (Tabela_Financa tabela_financa) throws SQLException {
 
-          String sql = "INSERT INTO Tabela_Financa (idTabela_Financias, nome, valor, idUsuario, idTransacao) VALUES (?,?,?);";
+          String sql = "INSERT INTO Tabela_Financa (id_Usuario, nome, saldo_Inicial, valor_Alvo) VALUES (?,?,?,?);";
 
           Connection conexao = null;
           PreparedStatement prt = null;
@@ -20,11 +19,10 @@ public class Tabela_FinancaDAO {
 
                conexao = Conexao.getInstancia().conectar();
                prt = conexao.prepareStatement(sql);
-               prt.setInt(1, tabela_financa.getIdTabela_Financia());
-               prt.setString(2, tabela_financa.getNomeTabela());
-               prt.setBigDecimal(3, tabela_financa.getValorTransacaos());
-               prt.setInt(3, tabela_financa.getUsuario().getIdUsuario());
-               prt.setInt(3, tabela_financa.getTransacao().getId_Transacao());
+               prt.setInt(1, tabela_financa.getId_Usuario());
+               prt.setString(2, tabela_financa.getNome());
+               prt.setBigDecimal(3, tabela_financa.getSaldo_Inicial());
+               prt.setBigDecimal(4, tabela_financa.getValor_Alvo());
 
                prt.executeUpdate();
 

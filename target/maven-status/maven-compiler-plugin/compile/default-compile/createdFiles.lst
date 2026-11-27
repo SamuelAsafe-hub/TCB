@@ -1,0 +1,10 @@
+br\edu\ifpr\modelo\gest_Usuario\Usuario.class
+br\edu\ifpr\modelo\gest_Atividade\Atividade.class
+br\edu\ifpr\modelo\gest_Usuario\UsuarioService.class
+br\edu\ifpr\dao\Conexao.class
+br\edu\ifpr\dao\Tabela_FinancaDAO.class
+br\edu\ifpr\dao\UsuarioDAO.class
+br\edu\ifpr\dao\TransacaoDAO.class
+br\edu\ifpr\modelo\gest_TabelaFinanca\Tabela_Financa.class
+br\edu\ifpr\modelo\gest_Usuario\UsuarioController.class
+br\edu\ifpr\modelo\gest_Transacao\Transacao.class

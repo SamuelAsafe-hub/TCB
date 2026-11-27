@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         Javalin app = Javalin.create(config -> {
-            config.staticFiles.add("src/main/resources/static", Location.EXTERNAL);
+            config.staticFiles.add("/public", Location.CLASSPATH);
         });
 
         // Cria uma rota
@@ -23,7 +23,7 @@ public class Main {
             new UsuarioDAO().insUsuar(u);
             pedido.status(201).json(Map.of("mensagem", "Usuário criado!"));
         });
-    
+        
          app.start(8081); // Liga na porta 8081
         
     }

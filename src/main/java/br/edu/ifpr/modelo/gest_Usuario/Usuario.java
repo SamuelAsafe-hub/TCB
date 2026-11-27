@@ -1,70 +1,32 @@
 package br.edu.ifpr.modelo.gest_Usuario;
 
-import java.math.BigDecimal;
-
-import br.edu.ifpr.modelo.gest_Atividade.Atividade;
-import br.edu.ifpr.modelo.gest_TabelaFinanca.Tabela_Financa;
-
 
 public class Usuario{
-   
-    private Integer idUsuario;
-    private String Nickname;
-    private String Senha;
-    private BigDecimal saldo = BigDecimal.ZERO;
-    private Tabela_Financa tabela_Financa;
-    private Atividade atividade;
-   
-    public Integer getIdUsuario() {
-        return idUsuario;
+    private int id_Usuario;
+    private String nickname;
+    private String senha;
+
+    public int getId_Usuario() {
+        return id_Usuario;
     }
-   
-    public void setIdUsuario(Integer idUsuario) {
-        this.idUsuario = idUsuario;
+
+    public void setId_Usuario(int id_Usuario) {
+        this.id_Usuario = id_Usuario;
     }
-   
+
     public String getNickname() {
-        return Nickname;
+        return nickname;
     }
-   
+
     public void setNickname(String nickname) {
-        Nickname = nickname;
+        this.nickname = nickname;
     }
-   
-   
+
     public String getSenha() {
-        return Senha;
+        return senha;
     }
     
     public void setSenha(String senha) {
-        Senha = senha;
+        this.senha = senha;
     }
-   
-    public BigDecimal getSaldo() {
-        return saldo;
-    }
-   
-    public void setSaldo(BigDecimal saldo) {
-        this.saldo = saldo;
-    }
-   
-    public Tabela_Financa getTabela_Financa() {
-        return tabela_Financa;
-    }
-    
-    public void setTabela_Financa(Tabela_Financa tabela_Financa) {
-        this.tabela_Financa = tabela_Financa;
-    }
-   
-    public Atividade getAtividade() {
-        return atividade;
-    }
-    
-    public void setAtividade(Atividade atividade) {
-        this.atividade = atividade;
-    }
-    
-  
-
-
 }
