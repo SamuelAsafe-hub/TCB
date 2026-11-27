@@ -20,12 +20,16 @@ public class Main {
 
         app.post("/api/usuarios", pedido -> {
             Usuario u = pedido.bodyAsClass(Usuario.class);
-            new UsuarioDAO().insUsuar(u);
-            pedido.status(201).json(Map.of("mensagem", "Usuário criado!"));
+            try {
+                new UsuarioDAO().insUsuar(u);
+                pedido.status(201).json(Map.of("mensagem", "Usuário criado!"));
+            } catch (Exception e) {
+                pedido.status(409).json(Map.of("erro", "Nickname já existe ou dados inválidos"));
+            }
         });
-        
-         app.start(8081); // Liga na porta 8081
-        
+
+        app.start(8081); // Liga na porta 8081
+
     }
 
 }
